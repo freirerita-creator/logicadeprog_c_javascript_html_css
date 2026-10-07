@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+    <title>Gata Jujuba</title>
+</head>
+<body>
+    <h1>Tudo sobre gatos!</h1>
+
+    <nav>
+
+    <a href="#sobre">Sobre</a> |
+    <a href="#racas">Raças</a> |
+    <a href="#cuidados">Cuidados</a> |
+    <a href="#contato">Contato</a>
+
+  </nav>
+
+  <h2>Sobre</h2>
+
+  <p>
+    Os gatos são animais independentes, curiosos e muito carinhosos.
+      Eles dormem de 12 a 16 horas por dia e adoram explorar cada canto da casa.
+  </p>
+
+  <h3>Curiosidades</h3>
+
+    <ul>
+
+      <li>Os gatos ronronam quando estão felizes.</li>
+      <li>Eles têm excelente visão noturna.</li>
+      <li>O bigode ajuda o gato a medir espaços.</li>
+
+    </ul>
+
+    <section id="racas">
+    <h2>Raças populares</h2>
+
+    <h3>Siamês</h3>
+    <p>Elegante, vocal e muito apegado ao dono.</p>
+
+    <h3>Persa</h3>
+    <p>Pelo longo e personalidade tranquila.</p>
+
+    <h3>Maine Coon</h3>
+    <p>Uma das maiores raças de gatos domésticos.</p>
+
+
+    <h3>Comparativo</h3>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Raça</th>
+          <th>Porte</th>
+          <th>Temperamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Siamês</td>
+          <td>Médio</td>
+          <td>Comunicativo</td>
+        </tr>
+        <tr>
+          <td>Persa</td>
+          <td>Médio</td>
+          <td>Calmo</td>
+        </tr>
+        <tr>
+          <td>Maine Coon</td>
+          <td>Grande</td>
+          <td>Amigável</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section id="cuidados">
+    <h2>Cuidados básicos</h2>
+    <p>Para manter seu gato saudável, siga estes passos:</p>
+
+    <ol>
+      <li>Ofereça água fresca todos os dias.</li>
+      <li>Mantenha a caixa de areia sempre limpa.</li>
+      <li>Leve ao veterinário regularmente.</li>
+      <li>Brinque com ele todos os dias.</li>
+    </ol>
+
+    <p>
+      Saiba mais em
+      <a href="https://pt.wikipedia.org/wiki/Gato" target="_blank">Wikipédia</a>.
+    </p>
+  </section>
+
+  <hr>
+
+    <section id="contato">
+    <h2>Fale com a gente</h2>
+    <p>Preencha o formulário abaixo (apenas para treino, não envia nada).</p>
+
+    <form action="#" method="post">
+
+      <p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </p>
+
+      <p>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+      </p>
+
+      <p>
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="1" max="120">
+      </p>
+
+      <p>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha">
+      </p>
+
+      <p>
+        <label for="nascimento">Data de nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento">
+      </p>
+
+      <p>
+        <label for="raca">Raça favorita:</label><br>
+        <select id="raca" name="raca">
+          <option value="">Selecione...</option>
+          <option value="siames">Siamês</option>
+          <option value="persa">Persa</option>
+          <option value="maine-coon">Maine Coon</option>
+          <option value="srd">Sem raça definida (SRD)</option>
+        </select>
+      </p>
+
+      <p>
+        Você tem gato?<br>
+        <input type="radio" id="sim" name="tem-gato" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="tem-gato" value="nao">
+        <label for="nao">Não</label>
+      </p>
+
+      <p>
+        O que você mais gosta?<br>
+        <input type="checkbox" id="fotos" name="gosto" value="fotos">
+        <label for="fotos">Fotos</label>
+        <input type="checkbox" id="dicas" name="gosto" value="dicas">
+        <label for="dicas">Dicas de cuidados</label>
+        <input type="checkbox" id="curiosidades" name="gosto" value="curiosidades">
+        <label for="curiosidades">Curiosidades</label>
+      </p>
+
+      <p>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40"
+          placeholder="Escreva sua mensagem..."></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </p>
+
+    </form>
+  </section>
+
+</main>
+
+<hr>
+
+<footer>
+  <p>&copy; 2026 Mundo dos Gatos — Site criado para treino de HTML.</p>
+</footer>
+
+</body>
+</html>
