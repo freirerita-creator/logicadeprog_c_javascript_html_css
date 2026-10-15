@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+
+    <p>Preencha os campos abaixo. Os campos com * são obrigatórios.</p>
+
+    <h3>Dados pessoais</h2>
+
+    <form action="" method="post">
+        <label for="nome">Nome Completo: *</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>   
+        
+        <label for="e-mail"> E-mail: *</label>
+        <input type="e-mail" id="e-mail" name="e-mail" required>
+        <br>
+
+        <label for="password">Senha:*</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="date">Data de nascimento:*</label>
+        <input type="date" id="date" name="date">
+        <br>
+
+        <label for="tel">Telefone:*</label>
+        <input type="tel" id="tel" name="Telefone">
+        <br>
+
+        <h3>Gênero</h3>
+
+        <input type="radio" id="opcao" name="opcao" value="Feminino">Feminino
+        <br>
+        <input type="radio" id="opcao" name="opcao" value="Masculino">Masculino
+        <br>
+        <input type="radio" id="opcao" name="opcao" value="Outro">Outro
+
+        <h3>Localização</h3>
+
+        <label for="cidade">Escolha a sua cidade:</label>
+
+        <select id="cidade" name="cidade" required>
+            <option value="">Selecione uma cidade</option>
+            <option value="maceio">Maceió</option>
+            <option value="recife">Recife</option>
+            <option value="salvador">Salvador</option>
+            <option value="aracaju">Aracaju</option>
+        </select>
+
+        <h3>Interesses</h3>
+
+        <label for="Tecnologia">Tecnologia</label>
+        <input type="checkbox" id="opcao" name="opcao" value="Tecnologia">
+        <br>
+
+        <label for="Gestao de Projetos">Gestão de Projetos</label>
+        <input type="checkbox" id="opcao" name="opcao" value="Gestão de Projetos">
+        <br>
+
+        <label for="Dados">Dados</label>
+        <input type="checkbox" id="opcao" name="opcao" value="Dados">
+        <br>
+
+        <h3>Observações</h3>
+
+        <label for="Observações"></label>
+        <input type="text">
+        <br>
+
+        <input type="checkbox" id="termos de uso" name="Termos de Uso">Li e aceito os termos de uso.
+        <br>
+
+        <input type="submit" id="submit" name="submit">
+        <input type="reset" id="reset" name="reset">
+
+    </form>
+    
+    
+
+</body>
+</html>
