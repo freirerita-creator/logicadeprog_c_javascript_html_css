@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
+
+    <style>
+
+        .row{
+
+            margin:30px;
+
+        }
+
+        label{
+
+            width: 150px;
+            text-align: left;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .opcao label {
+
+            width: auto;
+            text-align: left;
+            padding-right: 0;
+
+        }
+
+        fieldset{
+
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: lightgrey;
+
+
+        }
+
+
+    </style>
+
+
 </head>
 <body>
     <h1>Cadastro de Cliente</h1>
 
-    <p>Preencha os campos abaixo. Os campos com * são obrigatórios.</p>
+    <div>
+        <p> <font color= "red" face="arial"> <strong>Preencha os campos abaixo.</strong> </font> Os campos com * são obrigatórios.</p>
+    </div>
 
-    <h3>Dados pessoais</h2>
+    <fieldset>
+        <legend><strong>Dados Pessoais</strong></legend>
 
     <form action="" method="post">
         <label for="nome">Nome Completo: *</label>
@@ -31,9 +72,15 @@
 
         <label for="tel">Telefone:*</label>
         <input type="tel" id="tel" name="Telefone">
+
+    </fieldset>
+
         <br>
 
-        <h3>Gênero</h3>
+    
+    <fieldset>
+
+        <legend><strong>Gênero</strong></legend>
 
         <input type="radio" id="opcao" name="opcao" value="Feminino">Feminino
         <br>
@@ -41,7 +88,12 @@
         <br>
         <input type="radio" id="opcao" name="opcao" value="Outro">Outro
 
-        <h3>Localização</h3>
+    </fieldset>
+
+
+    <fieldset>
+
+        <legend><strong>Localização</strong></legend>
 
         <label for="cidade">Escolha a sua cidade:</label>
 
@@ -53,25 +105,41 @@
             <option value="aracaju">Aracaju</option>
         </select>
 
-        <h3>Interesses</h3>
+    </fieldset>
 
-        <label for="Tecnologia">Tecnologia</label>
-        <input type="checkbox" id="opcao" name="opcao" value="Tecnologia">
-        <br>
 
-        <label for="Gestao de Projetos">Gestão de Projetos</label>
-        <input type="checkbox" id="opcao" name="opcao" value="Gestão de Projetos">
-        <br>
+    <fieldset>
 
-        <label for="Dados">Dados</label>
-        <input type="checkbox" id="opcao" name="opcao" value="Dados">
-        <br>
+        <legend><strong>Interesses</strong></legend>
 
-        <h3>Observações</h3>
+        <div class="opcao">
+            <input type="checkbox" id="tecnologia" name="opcao" value="Tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+        </div>
+
+        <div class="opcao">
+            <input type="checkbox" id="gestao" name="opcao" value="Gestão de Projetos">
+            <label for="gestao">Gestão de Projetos</label>
+        </div>
+
+        <div class="opcao">
+            <input type="checkbox" id="dados" name="opcao" value="Dados">
+            <label for="dados">Dados</label>
+        </div>
+    
+    </fieldset>
+
+
+    <fieldset>
+
+        <legend><strong>Observações</strong></legend>
 
         <label for="Observações"></label>
-        <input type="text">
+        <textarea name="message" id=""></textarea>        
+
         <br>
+
+    </fieldset>
 
         <input type="checkbox" id="termos de uso" name="Termos de Uso">Li e aceito os termos de uso.
         <br>
@@ -80,8 +148,48 @@
         <input type="reset" id="reset" name="reset">
 
     </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15733.290368853393!2d-35.70792235!3d-9.6534528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145009f13b6eb%3A0x597cf37096164562!2sPraia%20de%20Ponta%20Verde!5e0!3m2!1spt-BR!2sbr!4v1792611688261!5m2!1spt-BR!2sbr" 
+            width="300" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+        
+    </iframe>
     
-    
+    <table summary="Esta tabela se refere aos dados pessoais"
+
+       border="1"
+       width="150"
+       cellspacing="5"
+       cellpadding="10"
+       align="center">
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Rita</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>40</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        
+    </tfoot>
+
+</table>
 
 </body>
 </html>
